@@ -44,8 +44,8 @@ play.addEventListener("click",function(){
 const loadSong =(songs)=>{
     title.textContent= songs.title;
     artist.textContent= songs.artist;
-    music.src="/" +songs.title+ ".mp3";
-    img.src="/"+songs.title+".jpg";
+    music.src=songs.title+ ".mp3";
+    img.src=songs.title+".jpg";
    };
  
  songIndex=0;
