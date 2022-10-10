@@ -22,23 +22,25 @@ var songs=[
 ]
 let isPlaying = false;
 // for play function
-play.addEventListener("click",function(){
+const playMusic=()=>{
     isPlaying=true;
     music.play();
     play.classList.replace("fa-play","fa-pause");
-});
+};
 // for pause function
-play.addEventListener("click",function(){
+const pauseMusic=()=>{
     isPlaying=false;
     music.pause();
     play.classList.replace("fa-pause","fa-play"); 
-});
+};
 play.addEventListener("click",function(){
     if(isPlaying){
-        music.pause();
+       // music.pause();
+       pauseMusic();
     }
     else{
-        music.play();
+       // music.play();
+       playMusic();
     }
 });
 const loadSong =(songs)=>{
